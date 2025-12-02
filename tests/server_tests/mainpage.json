@@ -1,0 +1,13 @@
+{
+    "server": "roblox-clone",
+    "port": "8000",
+    "ID": "a3b9c8d",
+    "apps": {
+        "blankworld": {
+            "name": "blankworld",
+            "src": "world.xml",
+            "description": "a blankworld pretty cool huh?",
+            "img": "world.img"
+        }
+    }
+}

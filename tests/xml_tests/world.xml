@@ -1,0 +1,18 @@
+<skybox>
+    <propetry>id: 0</propetry>
+    <propetry>name: SkyBox</propetry>
+    <base>
+        <propetry>id: 1</propetry>
+        <propetry>name: BasePlate<propetry>
+        <propetry>width: 250b</propetry>
+        <propetry>height: 250b</propetry>
+        <propetry>thickness: 5b<propetry>
+        <object>
+            <propetry>id: 2</propetry>
+            <propetry>name: house<propetry>
+            <child>
+                
+            </child>
+        </object>
+    </base>
+</skybox>
