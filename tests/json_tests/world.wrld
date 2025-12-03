@@ -1,0 +1,27 @@
+{
+    "name": "blankworld",
+    "children": [
+        {"skybox": {
+            "type": "Skybox",
+            "properties": {
+                "front": "sky_front.png",
+                "back": "sky_back.png",
+                "left": "sky_left.png",
+                "right": "sky_right.png",
+                "top": "sky_top.png",
+                "bottom": "sky_bottom.png"
+            }
+        }},
+        {"baseplate": {
+            "type": "Part",
+            "properties": {
+                "size": [100, 1, 100],
+                "position": [0, 0, 0],
+                "color": [0.5, 0.5, 0.5]
+            }
+        }}
+    ],
+    "properties": {
+        "description": "a blankworld pretty cool huh?"
+    }
+}

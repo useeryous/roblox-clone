@@ -5,7 +5,7 @@
     "apps": {
         "blankworld": {
             "name": "blankworld",
-            "src": "world.xml",
+            "src": "world.wrld",
             "description": "a blankworld pretty cool huh?",
             "img": "world.img"
         }
