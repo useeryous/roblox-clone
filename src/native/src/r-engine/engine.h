@@ -10,17 +10,15 @@ class world {
 	protected:
 
 	private:
+		
 }
 	
 class script {
 	public:
-
-	protected:
-
-	private:
-
+		std::string filepath;
+		std::string filetype;
 }
 
-
+int init(int argc, char* argv[]);
 
 #endif
