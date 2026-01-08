@@ -1,0 +1,35 @@
+modules = ["cpp-clang14", "c-clang14"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["cmake", "neovim", "SDL2", "lua", "pkg-config"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "r-engine"
+
+[[workflows.workflow]]
+name = "r-engine"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "vnc"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd build && SDL_VIDEODRIVER=x11 DISPLAY=:0 ./r-engine"
+
+[deployment]
+deploymentTarget = "vm"
+run = ["bash", "-c", "cd build && SDL_VIDEODRIVER=x11 DISPLAY=:0 ./r-engine"]
+build = ["bash", "-c", "mkdir -p build && cd build && cmake .. && make -j4"]
